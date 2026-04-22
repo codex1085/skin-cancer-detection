@@ -1,0 +1,17 @@
+Flask==2.3.2                     # Web framework for the Flask app
+Flask-Cors==3.0.10               # For handling Cross-Origin Resource Sharing (CORS)
+
+tensorflow==2.13.0               # For building and training the CNN model
+numpy==1.23.5                    # For numerical operations
+pandas==1.5.3                    # For handling the metadata CSV file
+scikit-learn==1.2.2              # For evaluation metrics (classification report, confusion matrix)
+matplotlib==3.7.2                # For plotting graphs and visualizing data
+seaborn==0.12.2                  # For advanced data visualization
+jupyter==1.0.0                   # For working with Jupyter notebooks
+
+Pillow==9.5.0                    # For image loading and preprocessing
+opencv-python==4.8.0.74          # For image processing tasks
+scipy==1.11.2                    # For advanced numerical computations
+h5py==3.9.0                      # For saving and loading the Keras model
+
+gunicorn==20.1.0                 # Optional: For deploying the Flask app

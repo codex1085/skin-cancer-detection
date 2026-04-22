@@ -1,0 +1,23 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+*.env
+.venv/
+*.log
+
+# Dataset
+data/images/*
+!data/images/sample.jpg
+
+# Models
+models/skin_cancer_model.h5
+models/checkpoints/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

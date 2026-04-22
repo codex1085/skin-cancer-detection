@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detection</title>
+</head>
+<body>
+    <h1>Skin Cancer Detection Using Deep Learning</h1>
+    <p>Upload an image of a skin lesion to predict if it is benign or malignant.</p>
+    
+    <!-- Upload Form -->
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload Image:</label>
+        <input type="file" name="file" accept="image/*" required><br><br>
+        <input type="submit" value="Upload and Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
